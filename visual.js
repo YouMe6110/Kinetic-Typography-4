@@ -1,5 +1,5 @@
-import { Particle } from "./particle.js";
 import { Text } from "./text.js";
+import { Particle } from "./particle.js";
 import { hslToHex } from "./utils.js";
 
 export class Visual {
@@ -18,7 +18,7 @@ export class Visual {
     }
 
     show(stageWidth, stageHeight) {
-        this.pos = this.text.setText('H', 20, stageWidth, stageHeight);
+        this.pos = this.text.setText('W', 20, stageWidth, stageHeight);
         this.posTotal = this.pos.length - 1;
     }
 
@@ -47,7 +47,6 @@ export class Visual {
 
             if (dist < minDist) {
                 item.progress += 100;
-
             }
 
             item.draw(ctx);

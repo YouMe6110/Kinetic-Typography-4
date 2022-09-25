@@ -48,8 +48,8 @@ export class Particle {
                 this.x, this.y, this.radius / 2,
                 this.x, this.y, this.radius
             );
-            g.addColorStop(0, this.color)
-            g.addColorStop(1, `rgba(0, 0, 0, 0)`)
+            g.addColorStop(0, this.color);
+            g.addColorStop(1, `rgba(0, 0, 0, 0)`);
 
             ctx.beginPath();
             ctx.fillStyle = g;
